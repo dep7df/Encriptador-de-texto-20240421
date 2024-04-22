@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="" id="dibujo">
+    </header>
+    <div class="container">
+        <div class="encriptar">
+            <textarea id="texto-encriptado" class="campo-texto" cols="30" rows="10" placeholder="Escribe el texto a encriptar"></textarea>
+
+        <div class="terminos">
+            <p>No se aceptan acentos o caracteres especiales.</p>
+        </div>    
+        <div class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+    </div>
+        <div class="encriptado">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Resultado:</h2>
+                <!--<p id="parrafo">Resultado:</p>-->
+                <textarea id="campo-mensaje" class="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div class="botones2">
+                <button class="btncopiar" id="btnCopiarTexto" onclick="copiarTexto()">Copiar mensaje a desencriptar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>©Desarrollado por Jesús Hernández, abril del 2024</p>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>
